@@ -15,6 +15,7 @@ const onSubmit = (values:Form) => {
 </script>
 
 <template>
+  <button>+1</button>
   <Form @submit="onSubmit">
     <CellGroup inset>
       <Field
