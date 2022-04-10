@@ -10,6 +10,11 @@ export default defineConfig({
       resolves: [VantResolve()],
     }),],
   server: {
-    port: 8888
+    port: 8888,
+    proxy:{
+      '/api':{
+        target:'http://120.26.164.99:3000/'
+      }
+    }
   }
 });
