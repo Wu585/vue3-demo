@@ -10,9 +10,6 @@ const x = (content:string)=>{
 </script>
 
 <template>
-  <Test/>
-  <MyButton @change="x" content="这是一个按钮"/>
-  <TodoList/>
   <router-view></router-view>
 </template>
 

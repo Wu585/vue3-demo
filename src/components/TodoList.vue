@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import useTodoList from '../hooks/useTodoList';
+import {useStore} from '../store';
 
 const {todoMsg, add, clearMsg, list, deleteOne, isAllDone, hasDown} = useTodoList();
+const store = useStore()
+console.log('store');
+console.log(store);
 </script>
 
 <template>
