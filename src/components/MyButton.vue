@@ -3,12 +3,12 @@ const props = defineProps({
   content: String
 });
 const emit = defineEmits(['change']);
-const onClick = () => {
+const handleClick = () => {
   emit('change', props.content);
 };
 </script>
 
 <template>
-  <button style="border: 1px solid #ddd" @click="onClick">{{ props.content }}</button>
+  <button style="border: 1px solid #ddd" @click="handleClick">{{ props.content }}</button>
 </template>
 
