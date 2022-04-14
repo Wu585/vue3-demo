@@ -3,6 +3,7 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import Test from './components/Test.vue';
 import MyButton from './components/MyButton.vue';
+import TodoList from './components/TodoList.vue';
 const x = (content:string)=>{
   console.log(content);
 }
@@ -11,6 +12,7 @@ const x = (content:string)=>{
 <template>
   <Test/>
   <MyButton @change="x" content="这是一个按钮"/>
+  <TodoList/>
 </template>
 
 <style>
