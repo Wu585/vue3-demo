@@ -13,6 +13,7 @@ const x = (content:string)=>{
   <Test/>
   <MyButton @change="x" content="这是一个按钮"/>
   <TodoList/>
+  <router-view></router-view>
 </template>
 
 <style>
